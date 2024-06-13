@@ -22,7 +22,17 @@ class ApiKategoriController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'deskripsi' => 'required|string',
+            'kategori' => 'required|string',
+        ]);
+
+        try {
+            $kategori = Kategori::create($request->all());
+            return response()->json(['data' => $kategori], 200);
+        } catch (\Exception $e) {
+            return response()->json(['status' => 'Gagal menambahkan kategori'], 500);
+        }
     }
 
     /**
