@@ -37,7 +37,7 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                        <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                            <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
                             <div class="col-lg-6 d-none d-lg-block bg-danger"></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
@@ -47,8 +47,7 @@
                                     <form class="user" action="login" method="POST">
                                         @csrf
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                name="email"
+                                            <input type="email" class="form-control form-control-user" name="email"
                                                 placeholder="Enter Email Address...">
                                         </div>
                                         <div class="form-group">
@@ -63,9 +62,6 @@
 
                                     </form>
                                     <hr>
-                                    <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
-                                    </div>
                                     <div class="text-center">
                                         <a class="small" href="register">Create an Account!</a>
                                     </div>
